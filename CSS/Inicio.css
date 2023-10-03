@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#header {
+    background-color: #e02b20;
+    padding: 10px;
+    display: flex;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    z-index: 9000;
+}
+
+.button {
+    padding: 15px 15px;
+    background-color: #ffffff00;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border-radius: 50%; /* Forma ovalada */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Transición de color al pasar el mouse */
+}
+
+/* Cambia el color del botón al pasar el mouse */
+.button:hover {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+button a{
+    text-decoration: none;
+}
+
+.contenedor{
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-left: 175px;
+}
+
+.contenedor a{
+    text-decoration: none;
+}
+
+#et-info {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 200px;
+}
+
+#et-info-phone {
+    font-family:Open Sans,Arial,sans-serif;
+    margin-right: 13px;
+}
+
+#et-info-phone, #et-info-email {
+    font-family:Open Sans,Arial,sans-serif;
+    position: relative;
+    font-weight: 600;
+    margin-right: 10px;
+
+}
+
+.et-social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utiliza flexbox para alinear las imágenes horizontalmente */
+}
+
+.et-social-icons li {
+    margin: 0; /* Elimina cualquier margen en los elementos li */
+}
+
+.et-social-icons img {
+    margin-right: 10px; /* Agrega un margen derecho de 10px entre las imágenes */
+    padding: 0; /* Elimina cualquier relleno en las imágenes */
+}
+
+nav a {
+    color: #ffffff;
+    font-family:Open Sans,Arial,sans-serif;
+}
+
+#top-header .et-social-icons {
+    float: none;
+    display: inline-block;
+}
+
+.et-social-icons {
+    font-size: 24px!important;
+    margin-left: 1140px;    /* Mueve hacia la derecha 20 píxeles */
+}
+
+.et-social-icons1 {
+    position: relative; /* Asegura que la imagen se posiciona de manera relativa al contenedor */
+    top: 0; /* Coloca la parte superior de la imagen en la parte superior del contenedor */
+    left: 500px;
+    margin-top: -30px;
+}
+
+ol, ul {
+    box-sizing: border-box;
+}
+ol, ul {
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#container-slider
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+#slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+}
+#slider li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 80%;
+    display: block;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+#container-slider .arrowPrev, #container-slider .arrowNext{
+    font-size: 30pt;
+    color: rgba(204, 204, 204, 0.65);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2; 
+}
+#container-slider .arrowNext {
+    left: initial;
+    right: 50px !important;
+}
+.content_slider{
+    padding: 15px 30px;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+}
+.content_slider div{
+    text-align: center;
+}
+.content_slider h2{
+    font-family: 'arial';
+    font-size: 30pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.content_slider p {
+    font-size: 15pt;
+    font-family: 'arial';
+    color: #FFF;
+    margin-bottom: 20px;
+}
+#slider li .content_slider{
+    background: rgba(0, 0, 0, 0.50);
+    padding: 10px 125px;
+}
+.content_slider{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnSlider{
+    color: #FFF;
+    font-size: 15pt;
+    font-family: 'arial';
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    border: 1px solid #CCC;
+    background: rgba(37, 40, 80, 0.55);
+    border-radius: 31px;
+    text-decoration: none;
+    transition: .5s all;
+}
+.btnSlider:hover{
+    background: #111;
+    border: 1px solid #111;
+}
+.listslider {
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    bottom: 5%;
+    list-style: none;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+.listslider li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.listslider li a {
+    background: #CCC;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item-select-slid {
+    background: #FFF  !important;
+}
+@media screen and (max-width: 460px){
+    .content_slider h2 {
+        font-size: 15pt !important;
+    }
+    .content_slider p {
+        font-size: 12pt !important;
+    }
+    #container-slider .arrowPrev, #container-slider .arrowNext{
+        font-size: 20pt;
+    }
+    #container-slider .arrowPrev{
+        left: 15px;
+    }
+    #container-slider .arrowNext{
+        right: 15px !important;
+    }
+    #slider{
+        height: 400px;
+        min-height: 400px;
+    }
+    #slider li .content_slider{
+        padding: 10px 35px;
+    }
+    .btnSlider{
+        padding: 10px 30px;
+        font-size: 10pt;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.transparent-image {
+    opacity: 0.5; /* Un valor de 0.5 hace que la imagen sea semitransparente */
+}
+
+/* Estilo para el botón de desplazamiento */
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
